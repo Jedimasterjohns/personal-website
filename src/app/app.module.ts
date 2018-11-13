@@ -2,15 +2,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './_components/home/home.component';
+
+import { GlobalServiceManager } from './_services/global-service-manager.service';
+
+import { ScrollToModule } from 'ng2-scroll-to';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ScrollToModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    GlobalServiceManager
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
