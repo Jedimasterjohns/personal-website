@@ -7,6 +7,7 @@ import { HomeComponent } from './_components/home/home.component';
 import { GlobalServiceManager } from './_services/global-service-manager.service';
 
 import { ScrollToModule } from 'ng2-scroll-to';
+import { routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ScrollToModule } from 'ng2-scroll-to';
   ],
   imports: [
     BrowserModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    routing
   ],
   providers: [
     GlobalServiceManager

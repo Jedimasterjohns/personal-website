@@ -1,6 +1,6 @@
   import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import * as Typed from 'typed.js';
+import Typed from 'typed.js';
 import { GlobalServiceManager } from 'src/app/_services/global-service-manager.service';
 
 @Component({
